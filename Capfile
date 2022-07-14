@@ -4,8 +4,8 @@ require 'capistrano/setup'
 # Include default deployment tasks
 require 'capistrano/deploy'
 
-require 'capistrano/asdf'
 require 'capistrano/bundler'
+require 'capistrano/asdf'
 
 require 'capistrano/puma'
 install_plugin Capistrano::Puma
