@@ -24,7 +24,7 @@ append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets'
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 
-set :ssh_options, :forward_agent => true
+set :ssh_options, :port => ENV['SSH_PORT'] || 22, :forward_agent => true
 
 set :asdf_tools, %w{ ruby }
 set :asdf_map_ruby_bins, %w{ bundle gem rake ruby }
