@@ -2,4 +2,4 @@
 
 require './the.cyberpul.se.rb'
 
-run Pumatra
+run TheCyberPulse
